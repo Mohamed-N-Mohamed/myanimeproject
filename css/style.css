@@ -1,22 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-body {
-  /* background: #222; */
-  font-size: 32px;
-  /* color: #fff; */
-  font-family: "Roboto", sans-serif;
-  background-color: #ccc;
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-
+}
+body {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .my-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  background-color: red;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.my-grid .card .card-body .card-text {
+  font-size: 16px;
 }
 
+#image-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("/img/cropped-1920-1080-656029.png") no-repeat center
+    center/cover;
+}
+#image-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
