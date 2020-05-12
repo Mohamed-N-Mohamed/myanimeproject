@@ -5,7 +5,6 @@ const submit = document.getElementById("btn");
 const row = document.getElementById("row");
 const content = document.querySelector(".anime-content");
 
-//api path
 //fetch anime data
 async function fetchAnime(e) {
   e.preventDefault();
